@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+.logo{
+    font-family:"Lobster Two", sans-serif;
+    color:white
+}
+
+#navbar {
+    background-color: rgb(126, 166, 250);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    
+    
+}
+
+#navbar a{
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+    gap: 50px;
+    
+} 
+
+#lista{
+    margin-left:auto;
+}
+
+.top{
+    color:white;
+
+}
+
+.top:hover{
+    transition:color 0.3 ease;
+    color:rgb(80, 137, 243);
+}
+
+.corpo{
+    background-image:url(download\ \(26\).jpeg);
+    position: relative;
+    background-repeat: no-repeat;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
