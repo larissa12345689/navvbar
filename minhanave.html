@@ -9,8 +9,9 @@
 
 
 <body class = "corpo">
+    <header>
     <div id ="container">
-        <nav id ="navbar">
+        <nav id ="header">
             <div class="logo">
                <h1>mimo</h1>
             </div>
@@ -20,16 +21,57 @@
                     <li><a href="" class="top">início</a></li>
                     <li><a href="" class ="top">animações</a></li>
                     <li><a href="" class ="top">blabla</a></li>
-                    <li><a href="" class ="top">blabla</a></li>
-                    <li><a href="" class ="top">blabla</a></li>
+                    <li id="butao"><button onclick="animar()" id="hamburguer" >
+                        <span class="linha"></span>
+                        <span class="linha"></span>
+                        <span class="linha"></span>
+                    </button></li>
+                    
                     
                    
                 </ul>
             </div>
         </nav>
     </div>
-    <img src="download (27).jpeg" alt="">
-    <h1>animações que marcaram</h1>
-    <h1>infância</h1>
+</header>
+    
+    
+    <h1 class = "titulo">animações que marcaram</h1>
+    <h1 class = "segundotitulo">a nossa infância</h1>
+
+    <script src="minhanave.js" defer></script>
+
+   
+
+    <div class="carrosel-container">
+        <button class="btn-prev">«</button>
+
+        <div class="carrosel">
+            <div class="card" id="curiosidades">
+                <img src="download (29).jpeg" width="40px" id="gumball">
+                <button class="click" >click</button>
+            
+            </div>
+               
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+
+        <button class="btn-next">»</button>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>

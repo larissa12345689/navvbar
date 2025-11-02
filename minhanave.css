@@ -9,31 +9,55 @@
 
 .logo{
     font-family:"Lobster Two", sans-serif;
-    color:white
+    color:white;
+    padding-left: 30px;
 }
 
-#navbar {
-    background-color: rgb(126, 166, 250);
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    padding: 30px;
-    
-    
-}
-
-#navbar a{
-    text-decoration: none;
-}
 
 .links {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     list-style: none;
     padding-left: 0;
     gap: 50px;
+    padding-right: 10px;
+}
+
+
+#header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+   transition: 1s;
     
-} 
+}
+
+#header a{
+    text-decoration: none;
+}
+
+
+#header.rolagem{
+    background-color: #fff;
+    padding: 20px 4%;
+    
+}
+
+#header.rolagem a{
+    color: rgb(96, 168, 250);
+}
+
+#header.rolagem h1{
+    color:rgb(96, 168, 250);
+}
+
+#header.rolagem .links :hover{
+    color:blue;
+}
+
 
 #lista{
     margin-left:auto;
@@ -46,46 +70,171 @@
 
 .top:hover{
     transition:color 0.3 ease;
-    color:rgb(80, 137, 243);
+    color:rgb(0, 85, 241);
 }
 
 .corpo{
-    background-image:url(download\ \(26\).jpeg);
-    position: relative;
+    background-image: url(ChatGPT\ Image\ 1\ de\ nov.\ de\ 2025\,\ 14_05_42.png); 
     background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top center;
+
+
     
+    
+} 
+
+/* 
+ .corpo::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%; 
+    background-color: hsla(219, 100%, 50%, 0.3);
+    z-index: -1; 
+}  */
+
+.titulo{
+    color:rgb(255, 255, 255);
+    font-size: 60px;
+    text-align: center;
+    padding-top: 300px;
+
+}
+
+.segundotitulo{
+    color:white;
+    font-size: 60px;
+    text-align: center;
+    /* -webkit-text-stroke-width: 2px; */
+    
+}
+
+html{
+    height: 480vh;
+}
+
+#hamburguer{
+    padding-right: 50px;
+    height: 30px;
+    width: 30px;
+    background: transparent;
+    border:transparent;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+.linha{
+    width: 20px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    margin: 5px auto;
+    transform-origin: center;
+    transition: 0.2s;   
+}
+
+
+#butao{
+    padding-right: 30px;
+    top:10px;
+}
+
+#hamburguer.ativar .linha:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+    background-color: rgb(255, 0, 0);
+
+}
+
+
+#hamburguer.ativar .linha:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+    background-color: rgb(255, 0, 0);
+
+}
+
+#hamburguer.ativar .linha:nth-child(2){
+    opacity: 0;
+}
+
+.carrosel-container{
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin:40px auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.carrosel{
+    display:flex;
+    overflow-x: auto; /* faz com que seja possivel fazer a rolagem horizontal(eixo x) caso o conteudo ultrapasse o espaço da tela. traduz: transbordar automático*/
+    scroll-behavior: smooth; /* Faz a rolagem ser suave, sem movimentos bruscos quando o js usar: carrossel.scrollLeft += 300; traduz-se:comportamento de rolagem suave*/
+    gap: 20px;
+    padding: 30px;
+
+}
+
+.carrosel::-webkit-scrollbar{ /*Isso remove a barra feia de rolagem que aparece no Chrome e navegadores baseados em WebKit.o webkit é responsável por processar o código HTML, CSS e JavaScript para exibir páginas da web */
+    display: none;
+}
+
+.card{
+    min-width: 230px;
+    height: 300px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+
+}
+
+.btn-prev {
+    color:rgb(0, 0, 0);
+    border:none;
+    padding: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: transparent;
+}
+
+.btn-prev:hover {
+    color: #555;
 }
 
 
 
+.btn-next {
+    background: transparent;
+    color:rgb(0, 0, 0);
+    border:none;
+    padding: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-next:hover {
+    color:#555;
+} 
 
 
+#curiosidades{
+    flex-direction: column;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#gumball{
+    padding-top: 0px;
+}
 
 
 
