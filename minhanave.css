@@ -190,7 +190,7 @@ html{
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     display: flex;
-    justify-content: center;
+    /* justify-content: center; tava deixando tudo no meio por isso n conseguia subir a imagem*/
     align-items: center;
     font-size: 22px;
 
@@ -233,7 +233,98 @@ html{
 
 
 #gumball{
-    padding-top: 0px;
+    margin-top: 15px;
+}
+
+.title-curiosidades{
+    margin-top: 25px;
+}
+
+
+.click{
+    margin-top: 30px;
+}
+
+#card1{
+    background-image: url(download\ \(30\).jpeg);
+    background-size: cover;
+    
+}
+
+#card2{
+    background-image: url(download\ \(31\).jpeg);
+    background-size: cover;
+}
+
+#card3{
+    background-image: url(download\ \(32\).jpeg);
+    background-size: cover;
+
+}
+
+
+
+#card4{
+    background-image: url(download\ \(38\).jpeg);
+    background-size: cover;
+
+}
+
+
+#card5{
+    background-image: url(Os\ 20\ desenhos\ animados\ infantis\ muito\ bem\ indicados\ \(e\ testados\ em\ 2025\)!.jpeg);
+    background-size: cover;
+
+}
+
+
+
+#card6{
+    background-image: url(download\ \(34\).jpeg);
+    background-size: cover;
+
+}
+
+
+
+#card7{
+    background-image: url(download\ \(35\).jpeg);
+    background-size: cover;
+
+}
+
+
+
+#card8{
+    background-image: url(download\ \(36\).jpeg);
+    background-size: cover;
+
+}
+
+
+
+#card9{
+    background-image: url(download\ \(37\).jpeg);
+    background-size: cover;
+
+}
+
+
+
+
+#card10{
+    background-image: url(download\ \(42\).jpeg);
+    background-size: cover;
+
+}
+
+
+
+
+#card11{
+    background-image: url(download\ \(41\).jpeg);
+    background-size: cover;
+
 }
 
 
@@ -241,20 +332,11 @@ html{
 
 
 
+#card12{
+    background-image: url(download\ \(39\).jpeg);
+    background-size: cover;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
