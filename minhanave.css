@@ -20,7 +20,7 @@
     list-style: none;
     padding-left: 0;
     gap: 50px;
-    padding-right: 10px;
+    padding-right: 10rem;
 }
 
 
@@ -43,6 +43,7 @@
 #header.rolagem{
     background-color: #fff;
     padding: 20px 4%;
+    z-index: 2;
     
 }
 
@@ -76,8 +77,10 @@
 .corpo{
     background-image: url(ChatGPT\ Image\ 1\ de\ nov.\ de\ 2025\,\ 14_05_42.png); 
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 100%;
     background-position: top center;
+    
+
 
 
     
