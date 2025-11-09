@@ -32,5 +32,3 @@ btnPrev.addEventListener("click", () => { /*A função passada é uma arrow func
 
 
 
-
-

@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +19,7 @@
     padding-left: 0;
     gap: 50px;
     padding-right: 10px;
+    width: 100%;
 }
 
 
@@ -41,7 +40,7 @@
 
 
 #header.rolagem{
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px 4%;
     z-index: 2;
     
@@ -72,4 +71,9 @@
 .top:hover{
     transition:color 0.3 ease;
     color:rgb(0, 85, 241);
+}
+
+body{
+    background-color: rgb(92, 255, 187);
+    height: 1800px;
 }
