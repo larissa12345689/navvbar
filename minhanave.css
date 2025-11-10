@@ -364,7 +364,7 @@ html{
 }
 
 #quadroBranco{
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     width: 500px;
     height: 300px;
     display: flex;
@@ -376,8 +376,10 @@ html{
 #passagem{
     width: 400px;
     height: 200px;
-    background-color: rgb(26, 209, 255);
+    background-color: rgb(255, 255, 255);
     justify-content: center;
     align-items: center;
     
 }
+
+

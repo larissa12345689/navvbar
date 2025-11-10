@@ -18,8 +18,8 @@
     list-style: none;
     padding-left: 0;
     gap: 50px;
-    padding-right: 10px;
-    width: 100%;
+    padding-right: 10rem;
+    
 }
 
 
@@ -30,7 +30,7 @@
     width: 100%;
     padding: 60px 4%;
     position: fixed;
-   transition: 1s;
+    transition: 1s;
     
 }
 
@@ -59,6 +59,15 @@
 }
 
 
+#header.rolagem span{
+    background-color: rgb(96, 168, 250);
+}
+
+#header.rolagem span:hover{
+    background-color: blue;
+}
+    
+
 #lista{
     margin-left:auto;
 }
@@ -75,5 +84,18 @@
 
 body{
     background-color: rgb(68, 196, 255);
+    background-image: url(ChatGPT\ Image\ 10\ de\ nov.\ de\ 2025\,\ 00_21_56.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
     height: 1800px;
+    display: flex;
+}
+
+#quadro-branco{
+    width: 500px;
+    height: 300px;
+    background-color: #ffffff;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
 }
