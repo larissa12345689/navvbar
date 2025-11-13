@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+.logo{
+    font-family:"Lobster Two", sans-serif;
+    color:white;
+    padding-left: 30px;
+}
+
+
+.links {
+    display: flex;
+    justify-content:space-between;
+    list-style: none;
+    padding-left: 0;
+    gap: 50px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+
+#header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+   transition: 1s;
+    
+}
+
+#header a{
+    text-decoration: none;
+}
+
+
+#header.rolagem{
+    background-color: #ffffff;
+    padding: 20px 4%;
+    z-index: 2;
+    
+}
+
+#header.rolagem a{
+    color: rgb(96, 168, 250);
+}
+
+#header.rolagem h1{
+    color:rgb(96, 168, 250);
+}
+
+#header.rolagem .links :hover{
+    color:blue;
+}
+
+
+#lista{
+    margin-left:auto;
+}
+
+.top{
+    color:white;
+
+}
+
+.top:hover{
+    transition:color 0.3 ease;
+    color:rgb(0, 85, 241);
+}
+
+body{
+    background-color: rgb(92, 255, 187);
+    height: 1800px;
+}
