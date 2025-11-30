@@ -65,7 +65,7 @@
 }
 
 #header.rolagem span:hover{
-    background-color: blue;
+    background-color: rgb(93, 129, 228);
 }
 
 
@@ -102,17 +102,6 @@
     
 } 
 
-/* 
- .corpo::before{
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%; 
-    background-color: hsla(219, 100%, 50%, 0.3);
-    z-index: -1; 
-}   */
 
 .titulo{
     color:rgb(255, 255, 255);
@@ -178,193 +167,16 @@ html{
     opacity: 0;
 }
 
-.carrosel-container{
-    position: relative;
-    width: 100%;
-    max-width: 900px;
-    margin:40px auto;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.carrosel{
-    display:flex;
-    overflow-x: auto; /*faz com que seja possivel fazer a rolagem horizontal(eixo x) caso o conteudo ultrapasse o espaço da tela. traduz: transbordar automático*/
-    scroll-behavior: smooth; /*Faz a rolagem ser suave, sem movimentos bruscos quando o js usar: carrossel.scrollLeft += 300; traduz-se:comportamento de rolagem suave*/
-    gap: 20px;
-    padding: 30px;
-
-}
-
-.carrosel::-webkit-scrollbar{ /*Isso remove a barra feia de rolagem que aparece no Chrome e navegadores baseados em WebKit.o webkit é responsável por processar o código HTML, CSS e JavaScript para exibir páginas da web*/
-    display: none;
-}
-
-.card{
-    min-width: 230px;
-    height: 300px;
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    display: flex;
-    justify-content: center; /*tava deixando tudo no meio por isso n conseguia subir a imagem*/
-    align-items: center;
-    font-size: 22px;
-
-}
-
-.btn-prev {
-    color:rgb(0, 0, 0);
-    border:none;
-    padding: 15px;
-    font-size: 28px;
-    cursor: pointer;
-    transition: 0.3s;
-    background: transparent;
-}
-
-.btn-prev:hover {
-    color: #555;
-}
-
-
-
-.btn-next {
-    background: transparent;
-    color:rgb(0, 0, 0);
-    border:none;
-    padding: 15px;
-    font-size: 28px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.btn-next:hover {
-    color:#555;
-} 
-
 
 #curiosidades{
     flex-direction: column;
 }
 
 
-#gumball{
-    margin-top: 15px;
-}
-
 .title-curiosidades{
     margin-top: 25px;
 }
 
-
-.click{
-    margin-top: 30px;
-}
-
-#card1{
-    background-image: url(imagens/download\ \(30\).jpeg);
-    background-size: cover;
-    
-}
-
-#card2{
-    background-image: url(imagens/download\ \(31\).jpeg);
-    background-size: cover;
-}
-
-#card3{
-    background-image: url(imagens/download\ \(32\).jpeg);
-    background-size: cover;
-
-}
-
-
-
-#card4{
-    background-image: url(imagens/download\ \(38\).jpeg);
-    background-size: cover;
-
-}
-
-
-#card5{
-    background-image: url(imagens/Os\ 20\ desenhos\ animados\ infantis\ muito\ bem\ indicados\ \(e\ testados\ em\ 2025\)!.jpeg);
-    background-size: cover;
-
-}
-
-
-
-#card6{
-    background-image: url(imagens/download\ \(34\).jpeg);
-    background-size: cover;
-
-}
-
-
-
-#card7{
-    background-image: url(imagens/download\ \(35\).jpeg);
-    background-size: cover;
-
-}
-
-
-
-#card8{
-    background-image: url(imagens/download\ \(36\).jpeg);
-    background-size: cover;
-
-}
-
-
-
-#card9{
-    background-image: url(imagens/download\ \(37\).jpeg);
-    background-size: cover;
-
-}
-
-
-
-
-#card10{
-    background-image: url(imagens/download\ \(42\).jpeg);
-    background-size: cover;
-
-}
-
-
-
-
-#card11{
-    background-image: url(imagens/download\ \(41\).jpeg);
-    background-size: cover;
-
-}
-
-
-
-
-
-
-#card12{
-    background-image: url(imagens/download\ \(39\).jpeg);
-    background-size: cover;
-
-}
-
-#containerBranco{
-    background-color: #fff;
-    width: 500px;
-    height: 300px;
-    border-radius: 25px;
-    margin-top: 600px;
-    margin-left: 40px;
-    
-}
 
 #menu-extra{
 position: absolute;                               /* deixa o elemento flutuar e permite você colocá-lo exatamente onde quiser na tela. */
@@ -406,25 +218,340 @@ z-index: 999;
     pointer-events: all;
 }
 
-#quadro-informe{
-    width: 100% auto;
-    height: 20rem;
+/*css de cada quiz*/
+#quiz-gumball-css-body{
+    background-color: cornflowerblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-gumball{
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;   /*margin superior 100px, esquerda e direita auto, e margin inferior 0.*/
+    padding: 30px;
+}
+
+#title-quiz-gumball{
+    color: #092b61;
+    font-weight: 600;    /*negrito*/
+    border-bottom: 1px solid #092b61;
+    padding-bottom: 30px;
+}
+
+#title-quiz-gumball-2{
+    font-size: 18px;
+    color: #092b61;
+    font-weight: 600;
+}
+
+#quiz-gumball{
+    padding: 20px 0;
+}
+
+.btn{
+    background: #fff;
+    color:#092b61;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #092b61;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {      /*aplique isso somente se o botão NÃO tiver o atributo disabled, Isso impede que botões desabilitados mudem de cor quando o mouse passa por cima.*/
+    background: #092b61;
+    color: #fff;
+}
+
+.btn:disabled{                    /*👉 Quando o botão está normal:passa o mouse → muda cor de fundo e texto. 👉 Quando o botão está desabilitado: o cursor vira o símbolo de bloqueado, ele não sofre o efeito hover graças ao :not([disabled]). */
+    cursor: no-drop;
+}
+
+#next-gumball-btn{
+    background: #092b61;
+    color:#fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct {
+    background: rgb(40, 233, 137);
+    color: white;
+}
+
+.incorrect{
+    background: rgb(219, 94, 94);
+    color:white;
+}
+
+/*quadro-gumball*/
+#quadro-gumball {
+    background-image: url(imagens/gumball.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.play-simples {
+    font-size: 60px;        /* tamanho do play */
+    color: white;           /* cor do triângulo */
+    text-decoration: none;  /* remove sublinhado */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+}
+
+.play-simples:hover {
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+/*galeria*/
+#body-galeria{
+    background-color: rgb(42, 74, 219);
+}
+
+.art{
+    width: 100%;
+    height: auto;
+    
+    margin-top: 30px;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgs{
+    background-color: aqua;
+    width: 400px;
+    height: 400px;
+    margin:40px;
+    border-radius: 25px;
+    
+}
+
+#art-1{
+    background-image: url(imagens/2a7bbad44c32664eb58ad41f68b5d8f8.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#art-2{
+    background-image: url(imagens/5d547b141bfe91b6c2f9e1bc85cbbe72.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#art-3{
+    background-image: url(imagens/5d92b5447207594884ca7942e972b44a.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#art-4{
+    background-image: url(imagens/847c7112b6476dc63425eb3357e20d0b.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#art-5{
+    background-image: url(imagens/8e16fdffbc3a9073c6e742404ba827f7.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#art-6{
+    background-image: url(imagens/95133d73b277ee3346768698c9bd24b7.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#art-7{
+    background-image: url(imagens/98b2c0df85c89833c1408359e81c7571.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#art-8{
+    background-image: url(imagens/9e02a00cc7ceae083b2d8c50871b63b5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#art-9{
+    background-image: url(imagens/d847d0acdf6d2b68a062325a415f9358.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#art-10{
+    background-image: url(imagens/a12ab765d927ab2041e4ff88a6ab2ce0.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#art-11{
+    background-image: url(imagens/6318e1d026840b28e016885f96782041.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#art-12{
+    background-image: url(imagens/11728249792f2c453b8cba274c828349.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+#caixa{
+    width: 100%;
+    height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    gap: 40px;
-    margin-top: 30px;
+    gap:30px;
 }
 
-#informe-individual{
+.papelzinho{
+    width: 300px;
+    height: 55px;
+    max-width: 400px;
+    max-height: 150px;
+    background: rgb(57, 69, 241);
+    border-radius: 40px 40px 0px 0px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(17, 32, 170);
+    padding-left: 10px;
+    
+
+
+}
+.papel-caixa{
     width: 300px;
     height: 300px;
-    border-radius: 15%;
+    max-width: 400px;
+    max-height: 400px;
     background-color: rgb(255, 255, 255);
-    gap: 100px;
-    margin-top: 30px;
+    border-radius: 20% 20%  15% 15%;
+    border: 1px solid rgb(17, 32, 170);
+    border-top: rgb(57, 69, 241);
 }
+
+svg{
+    color: rgb(254, 246, 168);
+}
+
+.texto-estrelinha{
+    color: #fff;
+    font-size: 20px;
+}
+
+
+/*animações*/
+.corpo-animações{
+    background-image: url(imagens/ceu-azul.png);
+    background-color: rgb(25, 112, 245);
+}
+
+#container-div-com-informações{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div-com-informações{
+    font-family:cursive;
+    background-color: #ffffff;
+    width: 70%;
+    height: 70px;
+    margin-top: 120px;
+    border-radius: 15px;                       /*quadrinho fino branco */
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+/*css do quiz que fica no menu extra*/
+#corpo-quiz{
+    margin: 0;
+    padding-top: 0;
+    box-sizing: border-box;           /*A largura e a altura totais do elemento incluem o conteúdo, o padding e a border*/
+    background-color: cornflowerblue;
+}
+
+#title-quiz-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#title-quiz{
+    padding-top: 15rem;
+    color: #fff;
+}
+
+#title-quiz-2{
+    color: #fff;
+}
+
+.quadros-quiz-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.quadros-quiz{
+    margin-top: 20px;
+    width: 15rem;
+    height: 15rem;
+    background-color: #fff;
+    border-radius: 15%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+
+
+
+
 
 
 
