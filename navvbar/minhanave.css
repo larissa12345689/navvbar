@@ -68,10 +68,6 @@
     background-color: rgb(93, 129, 228);
 }
 
-
-    
-
-
 #lista{
     margin-left:auto;
 }
@@ -87,21 +83,15 @@
 }
 
 .corpo{
-    background-image: url(imagens/ChatGPT\ Image\ 7\ de\ nov.\ de\ 2025\,\ 20_05_59.png);
-    background-color: rgb(0, 46, 198);
+    background-image: url(imagens/ceu-azul.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center -800px;
+    background-position: center -100px;
+}
 
-    
-    
-
-
-
-    
-    
-} 
-
+#html-inicio{
+    height: 100vh;
+}
 
 .titulo{
     color:rgb(255, 255, 255);
@@ -121,6 +111,10 @@
 
 html{
     height: 480vh;
+}
+
+#html-quiz{
+    height: 200vh;
 }
 
 #hamburguer{
@@ -218,7 +212,92 @@ z-index: 999;
     pointer-events: all;
 }
 
+
+.titulo-inicial{
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+#titulo-2{
+    padding-top: 0;
+}
+
+#armazenar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guardado p{
+    display: flex;
+    background-color: #ffffff;
+    width: 300px;
+    height: 70px;
+    margin:20px;
+    border-radius:15px;
+    justify-content:center;
+    align-items: center;
+    font-size:20px;
+}
+
+
+
+
+
+
+
+
+
+
 /*css de cada quiz*/
+
+#corpo-quiz{
+    margin: 0;
+    padding-top: 0;
+    box-sizing: border-box;           /*A largura e a altura totais do elemento incluem o conteúdo, o padding e a border*/
+    background-image: url(imagens/ceu-azul.png);
+}
+
+#title-quiz-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#title-quiz{
+    padding-top: 15rem;
+    color: #fff;
+}
+
+#title-quiz-2{
+    color: #fff;
+}
+
+.quadros-quiz-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.quadros-quiz{
+    margin-top: 20px;
+    width: 15rem;
+    height: 15rem;
+    background-color: #fff;
+    border-radius: 15%;
+    border: 2px solid white;
+    position: relative;
+}
+
+
+/*quiz-gumball*/
 #quiz-gumball-css-body{
     background-color: cornflowerblue;
     margin: 0;
@@ -321,9 +400,861 @@ z-index: 999;
 
 }
 
+
+
+
+/* quiz apenas um show*/
+
+#quiz-apenas-css-body{
+    background-color: cornflowerblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-apenas{
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;   /*margin superior 100px, esquerda e direita auto, e margin inferior 0.*/
+    padding: 30px;
+}
+
+#title-quiz-apenas{
+    color: #092b61;
+    font-weight: 600;    /*negrito*/
+    border-bottom: 1px solid #092b61;
+    padding-bottom: 30px;
+}
+
+#title-quiz-apenas-2{
+    font-size: 18px;
+    color: #092b61;
+    font-weight: 600;
+}
+
+#quiz-apenas{
+    padding: 20px 0;
+}
+
+.btn{
+    background: #fff;
+    color:#092b61;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #092b61;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {      /*aplique isso somente se o botão NÃO tiver o atributo disabled, Isso impede que botões desabilitados mudem de cor quando o mouse passa por cima.*/
+    background: #092b61;
+    color: #fff;
+}
+
+.btn:disabled{                    /*👉 Quando o botão está normal:passa o mouse → muda cor de fundo e texto. 👉 Quando o botão está desabilitado: o cursor vira o símbolo de bloqueado, ele não sofre o efeito hover graças ao :not([disabled]). */
+    cursor: no-drop;
+}
+
+#next-apenas-btn{
+    background: #092b61;
+    color:#fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct {
+    background: rgb(40, 233, 137);
+    color: white;
+}
+
+.incorrect{
+    background: rgb(219, 94, 94);
+    color:white;
+}
+
+/* quadro apenas*/
+#quadro-apenas {
+    background-image: url(imagens/mordecai\ e\ rigb.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.play-simples {
+    font-size: 60px;        /* tamanho do play */
+    color: white;           /* cor do triângulo */
+    text-decoration: none;  /* remove sublinhado */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+}
+
+.play-simples:hover {
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+
+/*quiz irmao*/
+#quiz-irmao-css-body{
+    background-color: cornflowerblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-irmao{
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;   /*margin superior 100px, esquerda e direita auto, e margin inferior 0.*/
+    padding: 30px;
+}
+
+#title-quiz-irmao{
+    color: #092b61;
+    font-weight: 600;    /*negrito*/
+    border-bottom: 1px solid #092b61;
+    padding-bottom: 30px;
+}
+
+#title-quiz-irmao-2{
+    font-size: 18px;
+    color: #092b61;
+    font-weight: 600;
+}
+
+#quiz-irmao{
+    padding: 20px 0;
+}
+
+.btn{
+    background: #fff;
+    color:#092b61;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #092b61;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {      /*aplique isso somente se o botão NÃO tiver o atributo disabled, Isso impede que botões desabilitados mudem de cor quando o mouse passa por cima.*/
+    background: #092b61;
+    color: #fff;
+}
+
+.btn:disabled{                    /*👉 Quando o botão está normal:passa o mouse → muda cor de fundo e texto. 👉 Quando o botão está desabilitado: o cursor vira o símbolo de bloqueado, ele não sofre o efeito hover graças ao :not([disabled]). */
+    cursor: no-drop;
+}
+
+#next-irmao-btn{
+    background: #092b61;
+    color:#fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct {
+    background: rgb(40, 233, 137);
+    color: white;
+}
+
+.incorrect{
+    background: rgb(219, 94, 94);
+    color:white;
+}
+
+/* quadro irmao*/
+#quadro-irmao {
+    background-image: url(imagens/Irmão\ do\ Jorel.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.play-simples {
+    font-size: 60px;        /* tamanho do play */
+    color: white;           /* cor do triângulo */
+    text-decoration: none;  /* remove sublinhado */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+}
+
+.play-simples:hover {
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+
+/*quiz charlie e lola*/
+#quiz-charlie-css-body{
+    background-color: cornflowerblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-charlie{
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;   /*margin superior 100px, esquerda e direita auto, e margin inferior 0.*/
+    padding: 30px;
+}
+
+#title-quiz-charlie{
+    color: #092b61;
+    font-weight: 600;    /*negrito*/
+    border-bottom: 1px solid #092b61;
+    padding-bottom: 30px;
+}
+
+#title-quiz-charlie-2{
+    font-size: 18px;
+    color: #092b61;
+    font-weight: 600;
+}
+
+#quiz-charlie{
+    padding: 20px 0;
+}
+
+.btn{
+    background: #fff;
+    color:#092b61;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #092b61;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {      /*aplique isso somente se o botão NÃO tiver o atributo disabled, Isso impede que botões desabilitados mudem de cor quando o mouse passa por cima.*/
+    background: #092b61;
+    color: #fff;
+}
+
+.btn:disabled{                    /*👉 Quando o botão está normal:passa o mouse → muda cor de fundo e texto. 👉 Quando o botão está desabilitado: o cursor vira o símbolo de bloqueado, ele não sofre o efeito hover graças ao :not([disabled]). */
+    cursor: no-drop;
+}
+
+#next-charlie-btn{
+    background: #092b61;
+    color:#fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct {
+    background: rgb(40, 233, 137);
+    color: white;
+}
+
+.incorrect{
+    background: rgb(219, 94, 94);
+    color:white;
+}
+
+/*quadro-charlie*/
+#quadro-charlie {
+    background-image: url(imagens/charlie\ e\ lola.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.play-simples {
+    font-size: 60px;        /* tamanho do play */
+    color: white;           /* cor do triângulo */
+    text-decoration: none;  /* remove sublinhado */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+}
+
+.play-simples:hover {
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+
+
+/*quiz Clarencio*/
+#quiz-clarencio-css-body{
+    background-color: cornflowerblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-clarencio{
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;   /*margin superior 100px, esquerda e direita auto, e margin inferior 0.*/
+    padding: 30px;
+}
+
+#title-quiz-clarencio{
+    color: #092b61;
+    font-weight: 600;    /*negrito*/
+    border-bottom: 1px solid #092b61;
+    padding-bottom: 30px;
+}
+
+#title-quiz-clarencio-2{
+    font-size: 18px;
+    color: #092b61;
+    font-weight: 600;
+}
+
+#quiz-clarencio{
+    padding: 20px 0;
+}
+
+.btn{
+    background: #fff;
+    color:#092b61;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #092b61;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {      /*aplique isso somente se o botão NÃO tiver o atributo disabled, Isso impede que botões desabilitados mudem de cor quando o mouse passa por cima.*/
+    background: #092b61;
+    color: #fff;
+}
+
+.btn:disabled{                    /*👉 Quando o botão está normal:passa o mouse → muda cor de fundo e texto. 👉 Quando o botão está desabilitado: o cursor vira o símbolo de bloqueado, ele não sofre o efeito hover graças ao :not([disabled]). */
+    cursor: no-drop;
+}
+
+#next-clarencio-btn{
+    background: #092b61;
+    color:#fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct {
+    background: rgb(40, 233, 137);
+    color: white;
+}
+
+.incorrect{
+    background: rgb(219, 94, 94);
+    color:white;
+}
+
+/*quadro-clarencio*/
+#quadro-clarencio {
+    background-image: url(imagens/clarencio.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.play-simples {
+    font-size: 60px;        /* tamanho do play */
+    color: white;           /* cor do triângulo */
+    text-decoration: none;  /* remove sublinhado */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+}
+
+.play-simples:hover {
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+
+/*quiz meu amigaozao*/
+#quiz-meu-css-body{
+    background-color: cornflowerblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-meu{
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;   /*margin superior 100px, esquerda e direita auto, e margin inferior 0.*/
+    padding: 30px;
+}
+
+#title-quiz-meu{
+    color: #092b61;
+    font-weight: 600;    /*negrito*/
+    border-bottom: 1px solid #092b61;
+    padding-bottom: 30px;
+}
+
+#title-quiz-meu-2{
+    font-size: 18px;
+    color: #092b61;
+    font-weight: 600;
+}
+
+#quiz-meu{
+    padding: 20px 0;
+}
+
+.btn{
+    background: #fff;
+    color:#092b61;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #092b61;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {      /*aplique isso somente se o botão NÃO tiver o atributo disabled, Isso impede que botões desabilitados mudem de cor quando o mouse passa por cima.*/
+    background: #092b61;
+    color: #fff;
+}
+
+.btn:disabled{                    /*👉 Quando o botão está normal:passa o mouse → muda cor de fundo e texto. 👉 Quando o botão está desabilitado: o cursor vira o símbolo de bloqueado, ele não sofre o efeito hover graças ao :not([disabled]). */
+    cursor: no-drop;
+}
+
+#next-meu-btn{
+    background: #092b61;
+    color:#fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct {
+    background: rgb(40, 233, 137);
+    color: white;
+}
+
+.incorrect{
+    background: rgb(219, 94, 94);
+    color:white;
+}
+
+/*quadro-amigaozao*/
+#quadro-meu {
+    background-image: url(imagens/Figuras\ do\ Meu\ Amigãozão\ desenho\ Discovery\ Kids.jpeg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.play-simples {
+    font-size: 60px;        /* tamanho do play */
+    color: white;           /* cor do triângulo */
+    text-decoration: none;  /* remove sublinhado */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+}
+
+.play-simples:hover {
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+/*quiz meninas super poderosas*/
+#quiz-meninas-css-body{
+    background-color: cornflowerblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-meninas{
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;   /*margin superior 100px, esquerda e direita auto, e margin inferior 0.*/
+    padding: 30px;
+}
+
+#title-quiz-meninas{
+    color: #092b61;
+    font-weight: 600;    /*negrito*/
+    border-bottom: 1px solid #092b61;
+    padding-bottom: 30px;
+}
+
+#title-quiz-meninas-2{
+    font-size: 18px;
+    color: #092b61;
+    font-weight: 600;
+}
+
+#quiz-meninas{
+    padding: 20px 0;
+}
+
+.btn{
+    background: #fff;
+    color:#092b61;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #092b61;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {      /*aplique isso somente se o botão NÃO tiver o atributo disabled, Isso impede que botões desabilitados mudem de cor quando o mouse passa por cima.*/
+    background: #092b61;
+    color: #fff;
+}
+
+.btn:disabled{                    /*👉 Quando o botão está normal:passa o mouse → muda cor de fundo e texto. 👉 Quando o botão está desabilitado: o cursor vira o símbolo de bloqueado, ele não sofre o efeito hover graças ao :not([disabled]). */
+    cursor: no-drop;
+}
+
+#next-meninas-btn{
+    background: #092b61;
+    color:#fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct {
+    background: rgb(40, 233, 137);
+    color: white;
+}
+
+.incorrect{
+    background: rgb(219, 94, 94);
+    color:white;
+}
+
+/*quadro meninas*/
+#quadro-meninas {
+    background-image: url(imagens/download\ \(42\).jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.play-simples {
+    font-size: 60px;        /* tamanho do play */
+    color: white;           /* cor do triângulo */
+    text-decoration: none;  /* remove sublinhado */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0.8;
+}
+
+.play-simples:hover {
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+
+/*quiz porto papel*/
+#quiz-porto-css-body{
+    background-color: cornflowerblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-porto{
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;   /*margin superior 100px, esquerda e direita auto, e margin inferior 0.*/
+    padding: 30px;
+}
+
+#title-quiz-porto{
+    color: #092b61;
+    font-weight: 600;    /*negrito*/
+    border-bottom: 1px solid #092b61;
+    padding-bottom: 30px;
+}
+
+#title-quiz-porto-2{
+    font-size: 18px;
+    color: #092b61;
+    font-weight: 600;
+}
+
+#quiz-porto{
+    padding: 20px 0;
+}
+
+.btn{
+    background: #fff;
+    color:#092b61;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #092b61;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {      /*aplique isso somente se o botão NÃO tiver o atributo disabled, Isso impede que botões desabilitados mudem de cor quando o mouse passa por cima.*/
+    background: #092b61;
+    color: #fff;
+}
+
+.btn:disabled{                    /*👉 Quando o botão está normal:passa o mouse → muda cor de fundo e texto. 👉 Quando o botão está desabilitado: o cursor vira o símbolo de bloqueado, ele não sofre o efeito hover graças ao :not([disabled]). */
+    cursor: no-drop;
+}
+
+#next-porto-btn{
+    background: #092b61;
+    color:#fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct {
+    background: rgb(40, 233, 137);
+    color: white;
+}
+
+.incorrect{
+    background: rgb(219, 94, 94);
+    color:white;
+}
+
+/*quadro porto*/
+#quadro-porto {
+    background-image: url(imagens/porto\ papel.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.play-simples {
+    font-size: 60px;        /* tamanho do play */
+    color: white;           /* cor do triângulo */
+    text-decoration: none;  /* remove sublinhado */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+}
+
+.play-simples:hover {
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+
+/*quiz greg*/
+#quiz-greg-css-body{
+    background-color: cornflowerblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-greg{
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;   /*margin superior 100px, esquerda e direita auto, e margin inferior 0.*/
+    padding: 30px;
+}
+
+#title-quiz-greg{
+    color: #092b61;
+    font-weight: 600;    /*negrito*/
+    border-bottom: 1px solid #092b61;
+    padding-bottom: 30px;
+}
+
+#title-quiz-greg-2{
+    font-size: 18px;
+    color: #092b61;
+    font-weight: 600;
+}
+
+#quiz-greg{
+    padding: 20px 0;
+}
+
+.btn{
+    background: #fff;
+    color:#092b61;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #092b61;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {      /*aplique isso somente se o botão NÃO tiver o atributo disabled, Isso impede que botões desabilitados mudem de cor quando o mouse passa por cima.*/
+    background: #092b61;
+    color: #fff;
+}
+
+.btn:disabled{                    /*👉 Quando o botão está normal:passa o mouse → muda cor de fundo e texto. 👉 Quando o botão está desabilitado: o cursor vira o símbolo de bloqueado, ele não sofre o efeito hover graças ao :not([disabled]). */
+    cursor: no-drop;
+}
+
+#next-greg-btn{
+    background: #092b61;
+    color:#fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct {
+    background: rgb(40, 233, 137);
+    color: white;
+}
+
+.incorrect{
+    background: rgb(219, 94, 94);
+    color:white;
+}
+
+/*quadro greg*/
+#quadro-greg {
+    background-image: url(imagens/gred.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.play-simples {
+    font-size: 60px;        /* tamanho do play */
+    color: white;           /* cor do triângulo */
+    text-decoration: none;  /* remove sublinhado */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0.8;
+}
+
+.play-simples:hover {
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*galeria*/
 #body-galeria{
-    background-color: rgb(42, 74, 219);
+    background-image: url(imagens/ceu-azul.png);
 }
 
 .art{
@@ -419,8 +1350,18 @@ z-index: 999;
 }
 
 
+html.login {
+    background-color: #1614b3;
+    background-size: cover;
+    background-position: center;
+    height: 100vh !important;
+}
 
-#caixa{
+#corpo-login{
+    background-image: url(imagens/ceu-azul.png);
+}
+
+/* #caixa{
     width: 100%;
     height: 350px;
     display: flex;
@@ -462,7 +1403,7 @@ svg{
 .texto-estrelinha{
     color: #fff;
     font-size: 20px;
-}
+} */
 
 
 /*animações*/
@@ -493,70 +1434,309 @@ svg{
     position: relative;
 }
 
-
-
-
-
-
-
-
-
-
-/*css do quiz que fica no menu extra*/
-#corpo-quiz{
-    margin: 0;
-    padding-top: 0;
-    box-sizing: border-box;           /*A largura e a altura totais do elemento incluem o conteúdo, o padding e a border*/
-    background-color: cornflowerblue;
-}
-
-#title-quiz-container{
+.expor{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-left: auto;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-#title-quiz{
-    padding-top: 15rem;
-    color: #fff;
-}
-
-#title-quiz-2{
-    color: #fff;
-}
-
-.quadros-quiz-container{
-    display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+}
+
+.card{
+    background-color: aqua;
+    width: 400px;
+    height: 400px;
+    margin:40px;
+    border-radius: 25px;
     
 }
 
-.quadros-quiz{
-    margin-top: 20px;
-    width: 15rem;
-    height: 15rem;
-    background-color: #fff;
-    border-radius: 15%;
-    border: 2px solid white;
+.card-infor{
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    height: 300px;
+    margin-right:40px;
+    border-radius: 25px;
+}
+
+#card-1{
+    background-image: url(imagens/download\ \(30\).jpeg);
+    background-size: cover;
+    background-position:bottom;
+}
+
+#card-4{
+    background-image: url(imagens/download\ \(42\).jpeg);
+    background-size: cover;
+    background-position:center;
+}
+
+#card-5{
+    background-image: url(imagens/charlie\ e\ lola.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
+#card-8{
+    background-image: url(imagens/mordecai\ e\ rigb.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
+#card-9{
+    background-image: url(imagens/incrivel\ mundo\ de\ gumball.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
+#card-12{
+    background-image: url(imagens/Figuras\ do\ Meu\ Amigãozão\ desenho\ Discovery\ Kids.jpeg);
+    background-size: cover;
+    background-position:center;
+}
+
+#card-13{
+    background-image: url(imagens/clarencio.jpg);
+    background-size: cover;
+    background-position:bottom;
+}
+
+
+#card-16{
+    background-image: url(imagens/gred.jpg);
+    background-size: cover;
+    background-position:bottom;
+}
+
+#card-17{
+    background-image: url(imagens/porto\ papel.jpg);
+    background-size: cover;
+    background-position:top;
+}
+
+#card-20{
+    background-image: url(imagens/sid\ o\ cientista.jpg);
+    background-size: cover;
+    background-position:center;
+
+}
+
+#title-irmão{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+}
+
+#text-irmão{
+    text-align: center;        /* centraliza o texto */
+    font-size: 1.1rem;         /* aumenta o tamanho */
+    padding: 15px; 
+    font-family: cursive;
+}
+
+#title-Charlie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-Charlie{
+    text-align: center;        
+    font-size: 1.1rem;         
+    padding: 15px; 
+    font-family: cursive;
+}
+
+#title-meninas{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-meninas{
+    text-align: center;        
+    font-size: 1.1rem;         
+    padding: 15px; 
+    font-family: cursive;
+}
+
+#title-apenas{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-apenas{
+    text-align: center;        
+    font-size: 1.1rem;         
+    padding: 15px; 
+    font-family: cursive;
+}
+
+
+#title-incrivel{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-incrivel{
+    text-align: center;        
+    font-size: 1.1rem;         
+    padding: 15px; 
+    font-family: cursive;
+}
+
+
+#title-meu{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-meu{
+    text-align: center;        
+    font-size: 1.1rem;         
+    padding: 15px; 
+    font-family: cursive;
+}
+
+
+#title-clarencio{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-clarencio{
+    text-align: center;        
+    font-size: 1.1rem;         
+    padding: 15px; 
+    font-family: cursive;
+}
+
+#title-mundo{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-mundo{
+    text-align: center;        
+    font-size: 1.1rem;         
+    padding: 15px; 
+    font-family: cursive;
+}
+
+#title-porto{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-porto{
+    text-align: center;        
+    font-size: 1.1rem;         
+    padding: 15px; 
+    font-family: cursive;
+}
+
+#title-sid{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-sid{
+    text-align: center;        
+    font-size: 1.1rem;         
+    padding: 15px; 
+    font-family: cursive;
+}
+
+/*curiosidades css*/
+#corpo-curiosidades{
+    background-image: url(imagens/ceu-azul.png);
+    
+}
+
+#html-curiosidades{
+    height: 170vh;
+}
+
+#title-curiosidades{
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+    font-size: 50px;
+    color: #fff;
+}
+
+#title-curiosidades-2{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: #fff;
+}
+
+.container-video{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+
+.quadro {
+    width: 500px;
+    height: 70px;             
+    background: white;
+    border-radius: 15px;
+    padding: 10px;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
     position: relative;
 }
 
+.video-play-btn{
+    background: none;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+}
 
+.conteudo {
+    margin-top: 10px;
+    height: 0;
+    overflow-y: auto;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
 
+#p{
+    font-size: 20px;
+}
 
+#listras{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-
-
-
-
-
-
-
-
-
-
+.branco{
+    height: 80px;
+    width: 700px;
+    background-color: #fff;
+    border-radius: 25px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
