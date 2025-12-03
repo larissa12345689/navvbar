@@ -1,7 +1,8 @@
 window.addEventListener("scroll", function(){
-     let header = document.querySelector('#header')
-     header.classList.toggle('rolagem', window.scrollY > 0)
- })
+    let header = document.querySelector('#header')
+    header.classList.toggle('rolagem', window.scrollY > 0)     
+})
+
 
 
 function animar(){
@@ -13,8 +14,3 @@ function animar(){
     menuExtra.classList.toggle("aberto");
 
 }
-
-
-
-
-
