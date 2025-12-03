@@ -229,10 +229,11 @@ z-index: 999;
 
 #armazenar{
     width: 100%;
-    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: auto;
+    text-align: center;
 }
 
 .guardado p{
@@ -245,6 +246,9 @@ z-index: 999;
     justify-content:center;
     align-items: center;
     font-size:20px;
+    padding:10px;
+    text-align: center;
+    
 }
 
 #guarda-img{
